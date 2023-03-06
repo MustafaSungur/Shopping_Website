@@ -1,3 +1,9 @@
+## Shopping Website
+- You can view the website from the link below.
+- Published by firebase hosting.
+- https://ng-shoppapp-f46f1.web.app
+- Admin mail: info@sungur.com
+- Admin parola: 147852
 
 ## APP FEATURES
 
