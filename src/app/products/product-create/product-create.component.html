@@ -1,0 +1,94 @@
+<h3>Ürün Oluştur</h3>
+
+<form #form="ngForm" (ngSubmit)="saveProduct(form)">
+  <div *ngIf="error" class="alert alert-danger">
+    {{ error }}
+  </div>
+  <div class="mb-3">
+    <label for="name" class="form-label">İsim</label>
+    <input
+      required
+      minlength="5"
+      [(ngModel)]="model.name"
+      type="text"
+      name="name"
+      id="name"
+      #name="ngModel"
+      class="form-control"
+    />
+    <div class="text-danger mt1" *ngIf="name.invalid && name.touched">
+      Ürün ismi en az 5 karakter olmalıdır
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Fiyat</label>
+    <input
+      [(ngModel)]="model.price"
+      required
+      type="number"
+      min="1"
+      max="100000"
+      name="price"
+      id="price"
+      #price="ngModel"
+      class="form-control"
+    />
+    <div class="text-danger mt1" *ngIf="price.invalid && price.touched">
+      Fiyat için negatif değer girmeyin !
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="imgUrl" class="form-label">Resim URL</label>
+    <input
+      [(ngModel)]="model.imgUrl"
+      type="text"
+      required=""
+      minlength="5"
+      name="imgUrl"
+      id="imgUrl"
+      class="form-control"
+      #imgUrl="ngModel"
+    />
+    <div class="text-danger mt1" *ngIf="imgUrl.invalid && imgUrl.touched">
+      Resim ismi girmelisiniz !
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Açıklama</label>
+
+    <ckeditor
+      [(ngModel)]="model.description"
+      name="description"
+      id="description"
+    ></ckeditor>
+  </div>
+
+  <div class="form-check mb-3">
+    <input
+      [(ngModel)]="model.isActive"
+      class="form-check-input"
+      type="checkbox"
+      id="isActive"
+      name="isActive"
+    />
+    <label class="form-check-label" for="isActive"> Ürün Mevcut </label>
+  </div>
+  <div class="mb-3">
+    <label for="categoryId" class="form-label">Kategory Id</label>
+    <select
+      [(ngModel)]="model.categoryId"
+      type="se"
+      name="categoryId"
+      id="categoryId"
+      class="form-control"
+    >
+      <option value="0">Kategori</option>
+      <option *ngFor="let category of categories" value="{{ category.id }}">
+        {{ category.name }}
+      </option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-color" [disabled]="form.invalid">
+    Kaydet
+  </button>
+</form>

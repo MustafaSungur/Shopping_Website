@@ -1,0 +1,19 @@
+<div class="display list-group mt-3">
+  <a
+    routerLink="/products"
+    class="list-group-item list-group-action"
+    (click)="selectCategory()"
+    [class.color]="selectedCategory == null"
+  >
+    Tüm Kategoriler
+  </a>
+  <a
+    *ngFor="let item of categories"
+    routerLink="/products/category/{{ item.id }}"
+    class="list-group-item list-group-action color"
+    (click)="selectCategory(item)"
+    [class.color]="selectedCategory == item"
+  >
+    {{ item.name }}
+  </a>
+</div>

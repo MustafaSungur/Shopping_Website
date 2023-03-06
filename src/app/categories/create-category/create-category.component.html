@@ -1,0 +1,21 @@
+<h3>Kategory Oluştur</h3>
+
+<form #form="ngForm" (ngSubmit)="saveCategory(form)">
+  <div class="mb-3">
+    <label for="name" class="form-label">Katagory İsim</label>
+    <input
+      type="text"
+      required
+      minlength="5"
+      [(ngModel)]="model.name"
+      name="name"
+      id="name"
+      class="form-control"
+      placeholder="En az 5 karakterli kategori ismi girin..."
+    />
+  </div>
+
+  <button type="submit" class="btn btn-color" [disabled]="form.invalid">
+    Kaydet
+  </button>
+</form>

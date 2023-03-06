@@ -1,0 +1,19 @@
+.spinner-grow.text-warning {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.btn-color {
+  background-color: #f27a1a;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn-color:hover {
+  opacity: 0.8 !important;
+}
+
+.price {
+  color: #f99417;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,22 @@
+.form-control.ng-touched.ng-invalid {
+  border-left: 5px solid #a94442;
+}
+
+.form-control.ng-dirty.ng-valid {
+  border-left: 5px solid #41a948 !important;
+}
+
+#load {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+.btn-color {
+  background-color: #f27a1a;
+  color: #fff;
+  transition: all 0.2s !important;
+}
+.btn-color:hover {
+  opacity: 0.9 !important;
+}

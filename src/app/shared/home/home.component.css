@@ -1,0 +1,32 @@
+img:hover {
+  cursor: pointer;
+}
+
+.image-card img {
+  height: 100%;
+}
+.image-card {
+  padding: 5px;
+  height: 16rem;
+}
+.card-text {
+  color: #f99417;
+  font-size: 1.4rem;
+}
+
+.btn-color {
+  background-color: #f27a1a;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn-color:hover {
+  opacity: 0.8 !important;
+}
+
+.card {
+  height: 500px !important;
+}
+.title-home {
+  color: #f27a1a;
+}

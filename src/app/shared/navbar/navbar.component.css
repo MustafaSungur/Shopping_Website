@@ -1,0 +1,9 @@
+nav {
+  /* background-color: #ffb100 !important; */
+
+  border-bottom: 2px solid #ffb100;
+}
+
+.active {
+  color: #ffb100 !important;
+}
