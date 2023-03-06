@@ -1,3 +1,26 @@
+
+## APP FEATURES
+
+- Product listing
+- Product filtering according to category
+- Adding products 
+- Adding category
+- Authentication
+
+## FRONT END
+
+- Angular 
+
+## DATABASE AND AUTHENTICATION
+
+- Firebase
+
+## API KEY
+- If you want to use the project, create account from firebase and Shopping_website/src/enviroments into you have to add the database url and the API KEY for authentication
+
+- https://firebase.google.com/docs/reference/rest/auth
+
+
 # NgApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
