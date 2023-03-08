@@ -1,7 +1,7 @@
 ## Shopping Website
 - You can view the website from the link below.
 - Published by firebase hosting.
-- https://ng-shoppapp-f46f1.web.app
+- https://ng-shoppapp-f46f1.web.app (it have some problem with add product add and add category. it will solve.)
 - Admin mail: info@sungur.com
 - Admin parola: 147852
 
