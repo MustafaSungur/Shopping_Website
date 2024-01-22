@@ -2,8 +2,6 @@
 - You can view the website from the link below.
 - Published by firebase hosting.
 - https://ng-shoppapp-f46f1.web.app 
-- Admin mail: info@sungur.com
-- Admin parola: 147852
 
 ## APP FEATURES
 
@@ -54,3 +52,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+![image](https://github.com/MustafaSungur/Shopping_Website/assets/81304546/562ee5c6-0a64-43e9-81ef-7a08a7d0c121)
+
